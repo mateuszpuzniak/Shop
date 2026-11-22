@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* ============================= */
-/* HEADER - DESKTOP */
-/* ============================= */
 .header {
   height: 100px;
   display: flex;
@@ -19,7 +16,6 @@
   max-width: 1200px;
 }
 
-/* LOGO */
 .logo a {
   text-transform: uppercase;
   color: var(--color-primary);
@@ -31,7 +27,6 @@
   text-decoration: none;
 }
 
-/* SEARCH BAR */
 .search {
   display: flex;
   align-items: center;
@@ -58,7 +53,6 @@
   scale: 1;
 }
 
-/* ICONS */
 .icons {
   display: flex;
 }
@@ -79,9 +73,6 @@
   color: var(--color-hover);
 }
 
-/* ============================= */
-/*   MEDIA QUERIES               */
-/* ============================= */
 @media (max-width: 768px) {
   .header {
     height: auto;
@@ -93,7 +84,6 @@
     align-items: center;
     gap: 15px;
   }
-  /* KOLEJNOŚĆ: LOGO → IKONY → WYSZUKIWARKA */
   .logo {
     order: 1;
   }
@@ -147,9 +137,6 @@
   padding-left: 20px;
 }
 
-/* ============================= */
-/*   BURGER BUTTON               */
-/* ============================= */
 .burger {
   display: none;
   cursor: pointer;
@@ -186,9 +173,6 @@
   display: inline;
 }
 
-/* ============================= */
-/*   MEDIA QUERIES               */
-/* ============================= */
 @media (max-width: 1024px) {
   .ul-menu {
     gap: 20px;
@@ -361,9 +345,6 @@
   transform: scale(1.05);
 }
 
-/* ============================= */
-/*   MEDIA QUERIES               */
-/* ============================= */
 @media (max-width: 1024px) {
   .hero-img .container {
     justify-content: center;
