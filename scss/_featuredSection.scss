@@ -1,6 +1,6 @@
 .section-carousel {
 	padding: 50px 0px;
-	background-color: #f8fafc;
+	background-color: var(--color-background);
 	margin-top: 20px;
 	width: 100%;
 }
@@ -13,7 +13,7 @@
 .product {
 	height: 450px;
 	width: 300px;
-	background-color: #ffffff;
+	background-color: var(--color-white);
 	border-radius: 20px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	padding: 0px 20px;
@@ -77,17 +77,17 @@
 	border-radius: 8px;
 	border: none;
 	cursor: pointer;
-	background-color: #2563eb;
+	background-color: var(--color-accent);
 	color: #ffffff;
 	transition: 0.3s;
 }
 .product-actions button:hover {
-	background-color: #1d4ed8;
+	background-color: var(--color-hover);
 }
 .pagination-button.active {
-	background-color: #172554;
+	background-color: var(--color-primary);
 	color: #ffffff;
-	border: 1px solid #172554;
+	border: 1px solid var(--color-primary);
 	border-radius: 6px;
 }
 

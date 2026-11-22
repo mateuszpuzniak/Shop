@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #dadada;
+	background-color: var(--color-background);
 	margin: 50px 0;
 	width: 100%;
 	// border-bottom: 1px solid rgb(184, 184, 184);
@@ -53,14 +53,14 @@
 .shipping span i,
 .returns span i,
 .support span i {
-	color: #7971ea;
+	color: var(--color-accent);
 	scale: 2;
 }
 .info-h2 {
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.2;
-	color: #25262a;
+	color: var(--color-primary);
 	letter-spacing: 0.05em;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -68,7 +68,7 @@
 }
 .info-p {
 	line-height: 1.7;
-	color: #8c92a0;
+	color: var(--color-muted);
 	font-weight: 300;
 	font-size: 16px;
 }

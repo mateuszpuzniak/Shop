@@ -6,6 +6,17 @@
 @use './scss/featuredSection';
 @use './scss/footer';
 
+:root {
+	--color-background: #f5f1ea;
+	--color-primary: #292722;
+	--color-accent: #a47752;
+	--color-secondary: #e7ded2;
+	--color-white: #ffffff;
+	--color-muted: #756b60;
+
+	--color-border: #d8cfc3;
+	--color-hover: #896344;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -13,7 +24,7 @@
 }
 
 body {
-	background-color: #dadada;
+	background-color: var(--color-background);
 	font-family: 'Mukta', sans-serif;
 }
 
@@ -22,4 +33,3 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-

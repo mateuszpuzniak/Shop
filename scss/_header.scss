@@ -7,8 +7,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid rgb(184, 184, 184);
-	background-color: #dadada;
+	border-bottom: 1px solid var(--color-border);
+	background-color: var(--color-background);
 }
 
 .header-top {
@@ -22,12 +22,12 @@
 /* LOGO */
 .logo a {
 	text-transform: uppercase;
-	color: #25262a;
+	color: var(--color-primary);
 	letter-spacing: 4px;
 	font-size: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border: 2px solid #25262a;
+	border: 2px solid var(--color-primary);
 	text-decoration: none;
 }
 
@@ -35,7 +35,7 @@
 .search {
 	display: flex;
 	align-items: center;
-	background: #f1f1f1;
+	background: var(--color-secondary);
 	border-radius: 25px;
 	padding: 8px 12px;
 	width: 240px;
@@ -51,7 +51,7 @@
 	width: 170px;
 }
 .search i {
-	color: #888;
+	color: var(--color-muted);
 	margin: 0px 14px;
 	scale: 1;
 }
@@ -65,14 +65,14 @@
 .fa-cart-shopping {
 	margin: 10px 40px;
 	padding: 5px;
-	color: blue;
+	color: var(--color-primary);
 	scale: 1.5;
 	cursor: pointer;
 }
 .icons .fa-user:hover,
 .icons .fa-heart:hover,
 .icons .fa-cart-shopping:hover {
-	color: rgb(194, 12, 12);
+	color: var(--color-hover);
 }
 
 /* ============================= */
