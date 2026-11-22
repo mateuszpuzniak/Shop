@@ -1,0 +1,110 @@
+/* ============================= */
+/* HEADER - DESKTOP */
+/* ============================= */
+
+.header {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgb(184, 184, 184);
+	background-color: #dadada;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* LOGO */
+.logo a {
+	text-transform: uppercase;
+	color: #25262a;
+	letter-spacing: 4px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px solid #25262a;
+	text-decoration: none;
+}
+
+/* SEARCH BAR */
+.search {
+	display: flex;
+	align-items: center;
+	background: #f1f1f1;
+	border-radius: 25px;
+	padding: 8px 12px;
+	width: 240px;
+	height: 30px;
+	transition: 0.3s;
+}
+.search input {
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+	height: 30px;
+	width: 170px;
+}
+.search i {
+	color: #888;
+	margin: 0px 14px;
+	scale: 1;
+}
+
+/* ICONS */
+.icons {
+	display: flex;
+}
+.icons .fa-user,
+.fa-heart,
+.fa-cart-shopping {
+	margin: 10px 40px;
+	padding: 5px;
+	color: blue;
+	scale: 1.5;
+	cursor: pointer;
+}
+.icons .fa-user:hover,
+.icons .fa-heart:hover,
+.icons .fa-cart-shopping:hover {
+	color: rgb(194, 12, 12);
+}
+
+/* ============================= */
+/*   MEDIA QUERIES               */
+/* ============================= */
+
+@media (max-width: 768px) {
+	.header {
+		height: auto;
+		padding: 15px 0;
+		border-bottom: 0;
+	}
+
+	.header-top {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+
+	/* KOLEJNOŚĆ: LOGO → IKONY → WYSZUKIWARKA */
+	.logo {
+		order: 1;
+	}
+
+	.icons {
+		order: 2;
+		justify-content: center;
+	}
+
+	.search {
+		order: 3;
+		width: 80%;
+		max-width: 320px;
+	}
+}
